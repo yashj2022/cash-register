@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+* {
+    padding: 0.5%;
+    margin: 0.5%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:  #cffafe ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lora", serif;
+}
+
+.container {
+    width: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lora", serif;
+    background-color:  #67e8f9;
+    color: #272727;
+    padding: 1rem 4rem 1rem 4rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h1,
+h2,
+h3 {
+    color: #000000;
+    font-family: "Lora", serif;
+}
+
+.container h1 {
+    margin-top: 0rem;
+    width: 100%;
+    font-family: "Lora", serif;
+    padding: 1rem;
+    text-align: center;
+}
+
+h3 {
+    font-family: "Lora", serif;
+}
+
+.container p {
+    /* width: 60%; */
+    padding-top: 1rem;
+    /* padding: 1rem 3rem 0rem 3rem; */
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+label {
+    font-size: 1.2rem;
+    text-align: left;
+    font-weight: bold;
+}
+
+input {
+    width: 70%;
+    font-size: 1.2rem;
+    text-align: center;
+    border: none;
+    border-radius: 0.5rem;
+    border: 2px solid #000000;
+    padding: 0.5rem;
+    margin: 7px;
+    outline: none;
+    background-color: #f0f8ff;
+}
+
+button {
+    font-size: 1.2rem;
+    width: 20vh;
+    border: none;
+    border-radius: 7px;
+    padding: 0.5rem;
+    margin: 1rem 0rem;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    background-color: #000000;
+    color: #f0f8ff;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-container {
+    /* box-shadow: rgba(0, 0, 0, 0.2) 0px 3px 3px 0px; */
+    padding: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.messageDiv {
+    padding: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: #000000;
+}
+
+table {
+    margin-bottom: 0.5rem 0.5rem;
+    border-spacing: 0.5rem;
+}
+
+th,
+td {
+    font-size: 1rem;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+td {
+    width: 50px;
+    font-weight: 300;
+}
+
+change h3 {
+    font-size: 2rem;
+    padding: 20px;
+}
+
+.cash-given {
+    display: none;
+}
+
+table {
+    display: none;
+}

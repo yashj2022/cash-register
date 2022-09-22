@@ -5,8 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cash register </title>
+    <link rel="stylesheet" href="./style.css"/>
 </head>
 <body>
-    <h1>its workig</h1>
+
+    <div class="container">
+
+        <h1>cash Register</h1>
+        <p>
+            cash Register is a web app which takes bill amount & cash given to the shopkeeper and shows how much money returns to customer in minimum notes formate..
+        </p>
+        <div class="center-container">
+      <div class="bill-amount inputs">
+        <label for="bill">Bill Amount</label>
+         <input id="bill" type="text"/>
+         <button id="next-btn">Next</button>
+
+      </div>
+      <div class="cash-given inputs" id="cash-given">
+        <lable for="cash">Cash Given</lable>
+        <input id="cash" type="text"/>
+        <button id="button">Calculate</button>
+
+      </div>
+        </div>
+        <div id="messageDiv" class="messageDiv">
+        </div>
+
+
+        <table id="table">
+            <caption id="caption"></caption>
+            <tr>
+                <th>Note</td>
+                <td>2000</td>
+                <td>500</td>
+                <td>200</td>
+                <td>100</td>
+                <td>50</td>
+                <td>20</td>
+                <td>10</td>
+                <td>5</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th>No.of Notes</td>
+                <td class="NoOfNotes"></td>
+                <td class="NoOfNotes"></td>
+                <td class="NoOfNotes"></td>
+                <td class="NoOfNotes"></td>
+                <td class="NoOfNotes"></td>
+                <td class="NoOfNotes"></td>
+                <td class="NoOfNotes"></td>
+                <td class="NoOfNotes"></td>
+                <td class="NoOfNotes"></td>
+                </tr>
+
+        </table>
+    </div>
+    
+    <script src="./app.js"></script>
 </body>
 </html>
