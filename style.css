@@ -7,7 +7,7 @@
 
 body {
     background-color:  #cffafe ;
-    display: flex;
+    
     flex-direction: column;
     justify-content: center;
     align-items: center;
