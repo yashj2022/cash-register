@@ -1,68 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cash register </title>
-    <link rel="stylesheet" href="./style.css"/>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>mark10 Build your cash register with vanillaJS</title>
 </head>
+
 <body>
 
-    <div class="container">
-
-        <h1>cash Register</h1>
-        <p>
-            cash Register is a web app which takes bill amount & cash given to the shopkeeper and shows how much money returns to customer in minimum notes formate..
-        </p>
-        <div class="center-container">
-      <div class="bill-amount inputs">
-        <label for="bill">Bill Amount</label>
-         <input id="bill" type="text"/>
-         <button id="next-btn">Next</button>
-
-      </div>
-      <div class="cash-given inputs" id="cash-given">
-        <lable for="cash">Cash Given</lable>
-        <input id="cash" type="text"/>
-        <button id="button">Calculate</button>
-
-      </div>
-        </div>
-        <div id="messageDiv" class="messageDiv">
-        </div>
+  <div class="container">
+    <h1 class="heading">Cash register Manager</h1>
+    <p class="description">Enter the bill amount and cash given by the customer and know minimum number of notes to
+      return</p>
+    <label for="bill-amount">Bill Amount :</label>
+    <input type="number" id="bill-amount">
+    <label for="cash-given">cash given : </label>
+    <input type="number" id="cash-given">
+    <button id="check-btn">Check</button>
+    <p id="error-message"></p>
+    <table class="change-table" border="1">
+      <hr>
+      <caption id="caption">Return Change</caption>
 
 
-        <table id="table">
-            <caption id="caption"></caption>
-            <tr>
-                <th>Note</td>
-                <td>2000</td>
-                <td>500</td>
-                <td>200</td>
-                <td>100</td>
-                <td>50</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-              </tr>
-              <tr>
-                <th>No.of Notes</td>
-                <td class="NoOfNotes"></td>
-                <td class="NoOfNotes"></td>
-                <td class="NoOfNotes"></td>
-                <td class="NoOfNotes"></td>
-                <td class="NoOfNotes"></td>
-                <td class="NoOfNotes"></td>
-                <td class="NoOfNotes"></td>
-                <td class="NoOfNotes"></td>
-                <td class="NoOfNotes"></td>
-                </tr>
+      <tr>
+        <th>Notes</th>
+        <td>2000</td>
+        <td>500</td>
+        <td>100</td>
+        <td>20</td>
+        <td>10</td>
+        <td>5</td>
+        <td>1</td>
+      </tr>
 
-        </table>
-    </div>
-    
-    <script src="./app.js"></script>
+      <tr>
+        <th>No of Notes</th>
+        <td class="no-of-notes"><strong>0</strong></td>
+        <td class="no-of-notes"><strong>0</strong></td>
+        <td class="no-of-notes"><strong>0</strong></td>
+        <td class="no-of-notes"><strong>0</strong></td>
+        <td class="no-of-notes"><strong>0</strong></td>
+        <td class="no-of-notes"><strong>0</strong></td>
+        <td class="no-of-notes"><strong>0</strong></td>
+      </tr>
+    </table>
+  </div>
+
+
+  <script src="app.js"></script>
 </body>
+
 </html>
